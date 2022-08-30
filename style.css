@@ -1,6 +1,27 @@
-.photo2 {
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
   border-radius: 50%;
-  width: 100%;
+  width: 80px;
   height: auto;
-  align-content: top;
+}
+
+.wrapper .content {
+  width: calc(100% - 90px);
+  padding-left: 10px;
+}
+
+@media (max-width: 520px) {
+  .profile-photo {
+    width: 30px;
+    height: auto;
+  }
 }
